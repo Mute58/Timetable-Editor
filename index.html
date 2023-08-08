@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .ttime, th{
+                background-color: rgb(251, 240, 255);
+                color: rgb(80, 71, 121);
+            }
+            table, th, td{
+                border: 1px solid rgb(185, 156, 209);
+                border-collapse: collapse;
+            }
+            th, td{
+                padding-left: 10px;
+                padding-right: 10px;
+                text-align: center;
+            }
+            hr{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            caption{
+                font-size: 25px;
+                font-weight: bold;
+                color: rgb(74, 21, 123);
+            }
+        </style>
+    </head>
+    <title>
+        Timetable Editor
+    </title>
+    <body>
+        <div class="content">
+            <table id="mytable">
+                <caption>Timetable Editor</caption>
+                <tbody>
+                    <th></th>
+                    <th>星期一</th>
+                    <th>星期二</th>
+                    <th>星期三</th>
+                    <th>星期四</th>
+                    <th>星期五</th>
+                    <th>星期六</th>
+                    <th>星期日</th>
+                    <tr>
+                        <td class="ttime">08:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="ttime">09:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="ttime">10:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="ttime">11:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="ttime">12:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="ttime">13:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="ttime">14:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="ttime">15:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="ttime">16:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="ttime">17:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="ttime">18:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="ttime">19:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="ttime">20:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <div class="iInfo">
+                <form>
+                    <label for="cname">Course Name : </label>
+                    <input type="text" name="cname" id="cname">
+                    <br>
+                    <label for="ctype">Type : </label>
+                    <select name="ctype" id="ctype">
+                        <option value="Lecture">Lecture</option>
+                        <option value="Lab">Lab</option>
+                    </select>
+                    <br>
+                    <label for="bgcolor">Background color : </label>
+                    <input type="color" name="bgcolor" id="bgcolor">
+                    <br>
+                    <label for="sday">Day : </label>
+                    <select name="sday" id="sday">
+                        <option value="1">星期一</option>
+                        <option value="2">星期二</option>
+                        <option value="3">星期三</option>
+                        <option value="4">星期四</option>
+                        <option value="5">星期五</option>
+                        <option value="6">星期六</option>
+                        <option value="7">星期日</option>
+                    </select>
+                    <br>
+                    <label for="stime">Time : </label>
+                    <select name="stime" id="stime">
+                        <option value="08:00">08:00</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option> 
+                    </select>
+                    - 
+                    <input type="text" name="etime" id="etime">
+                    <label for="hrs">Hours : </label>
+                    <select name="hrs" id="hrs">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <br>
+                    <button id="add" type="button" onclick="addTime()">ADD</button>
+                    <button type="reset">RESET</button>
+                </form>
+                <div id="testing"></div>
+            </div>
+        </div>
+
+        
+        <script>
+            var table = document.getElementById("mytable");
+            var row = table.rows[0];
+            var cell = row.cells[0];
+
+            function addTime(){
+                var cname = document.getElementById("cname").value;
+                var stime = document.getElementById("stime").value;
+                var hrs = parseInt(document.getElementById("hrs").value);
+                var sday = parseInt(document.getElementById("sday").value);
+                var ctype = document.getElementById("ctype").value;
+                var bgcolor = document.getElementById("bgcolor").value;
+                var etime = document.getElementById("etime").value;
+
+                var startRow;
+                switch (stime) {
+                    case "08:00":
+                        startRow = 1;
+                        break;
+                    case "09:00":
+                        startRow = 2;
+                        break;
+                    case "10:00":
+                        startRow = 3;
+                        break;
+                    case "11:00":
+                        startRow = 4;
+                        break;
+                    case "12:00":
+                        startRow = 5;
+                        break;
+                    case "13:00":
+                        startRow = 6;
+                        break;
+                    case "14:00":
+                        startRow = 7;
+                        break;
+                    case "15:00":
+                        startRow = 8;
+                        break;
+                    case "16:00":
+                        startRow = 9;
+                        break;
+                    case "17:00":
+                        startRow = 10;
+                        break;
+                    case "18:00":
+                        startRow = 11;
+                        break;
+                }
+
+                var endTime;
+                if (etime == ""){
+                    endTime = "";
+                }else {
+                    endTime = " - ";
+                }
+
+                var firstCell = table.rows[startRow].cells[sday];
+                firstCell.innerHTML = cname + " " + ctype + "<br>" + stime + endTime + etime;
+
+                firstCell.style.backgroundColor = bgcolor;
+                firstCell.style.color = "white";
+
+                for (var i = startRow + 1; i <= startRow + hrs; i++) {
+                    var row = table.rows[i];
+                    var cell = row.cells[sday];
+                    cell.style.backgroundColor = bgcolor;
+                }
+                
+            }
+        </script>
+    </body>
+</html>
