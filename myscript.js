@@ -62,11 +62,14 @@ function addTime() {
   firstCell.style.color = "white";
   firstCell.style.borderBottomColor = bgcolor;
 
+  var cell;
+
   for (var i = startRow + 1; i <= startRow + hrs; i++) {
     var row = table.rows[i];
-    var cell = row.cells[sday];
+    cell = row.cells[sday];
     cell.style.backgroundColor = bgcolor;
     cell.style.borderBottomColor = bgcolor;
   }
 
+  cell.style.borderBottomColor = "rgb(185, 156, 209)";
 }
