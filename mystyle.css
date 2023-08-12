@@ -1,0 +1,26 @@
+.ttime,
+th {
+  background-color: rgb(251, 240, 255);
+  color: rgb(80, 71, 121);
+}
+table,
+th,
+td {
+  border: 1px solid rgb(185, 156, 209);
+  border-collapse: collapse;
+}
+th,
+td {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+caption {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(74, 21, 123);
+}
