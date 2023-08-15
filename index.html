@@ -152,62 +152,102 @@
           </tr>
         </tbody>
       </table>
-      <hr />
-      <div class="iInfo">
-        <form>
-          <label for="cname">Course Name : </label>
-          <input type="text" name="cname" id="cname" />
-          <br />
-          <label for="ctype">Type : </label>
-          <select name="ctype" id="ctype">
-            <option value="Lecture">Lecture</option>
-            <option value="Lab">Lab</option>
-          </select>
-          <br />
-          <label for="bgcolor">Background color : </label>
-          <input type="color" name="bgcolor" id="bgcolor" />
-          <br />
-          <label for="sday">Day : </label>
-          <select name="sday" id="sday">
-            <option value="1">星期一</option>
-            <option value="2">星期二</option>
-            <option value="3">星期三</option>
-            <option value="4">星期四</option>
-            <option value="5">星期五</option>
-            <option value="6">星期六</option>
-            <option value="7">星期日</option>
-          </select>
-          <br />
-          <label for="stime">Time : </label>
-          <select name="stime" id="stime">
-            <option value="08:00">08:00</option>
-            <option value="09:00">09:00</option>
-            <option value="10:00">10:00</option>
-            <option value="11:00">11:00</option>
-            <option value="12:00">12:00</option>
-            <option value="13:00">13:00</option>
-            <option value="14:00">14:00</option>
-            <option value="15:00">15:00</option>
-            <option value="16:00">16:00</option>
-            <option value="17:00">17:00</option>
-            <option value="18:00">18:00</option>
-          </select>
-          -
-          <input type="text" name="etime" id="etime" />
-          <label for="hrs">Hours : </label>
-          <select name="hrs" id="hrs">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
-          <br />
-          <button id="add" type="button" onclick="addTime()">ADD</button>
-          <button type="reset">RESET</button>
-        </form>
-        <div id="testing"></div>
-      </div>
     </div>
+
+    <hr />
+
+    <form>
+      <table class="tInfo">
+        <tbody>
+          <tr>
+            <td class="tleft">
+              <label for="cname">Course Name : </label>
+            </td>
+            <td class="tright">
+              <input type="text" name="cname" id="cname" />
+            </td>
+          </tr>
+          <tr>
+            <td class="tleft">
+              <label for="ctype">Type : </label>
+            </td>
+            <td class="tright">
+              <select name="ctype" id="ctype">
+                <option value="Lecture">Lecture</option>
+                <option value="Lab">Lab</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="tleft">
+              <label for="bgcolor">Background color : </label>
+            </td>
+            <td class="tright">
+              <input type="color" name="bgcolor" id="bgcolor" />
+            </td>
+          </tr>
+          <tr>
+            <td class="tleft">
+              <label for="sday">Day : </label>
+            </td>
+            <td class="tright">
+              <select name="sday" id="sday">
+                <option value="1">星期一</option>
+                <option value="2">星期二</option>
+                <option value="3">星期三</option>
+                <option value="4">星期四</option>
+                <option value="5">星期五</option>
+                <option value="6">星期六</option>
+                <option value="7">星期日</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="tleft">
+              <label for="stime">Time : </label>
+            </td>
+            <td class="tright">
+              <select name="stime" id="stime">
+                <option value="08:00">08:00</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+              </select>
+              -
+              <input type="text" name="etime" id="etime" />
+            </td>
+          </tr>
+          <tr>
+            <td class="tleft">
+              <label for="hrs">Hours : </label>
+            </td>
+            <td class="tright">
+              <select name="hrs" id="hrs">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="tleft">
+              <button id="btnReset" type="reset">RESET</button>
+            </td>
+            <td class="tright">
+              <button id="btnAdd" type="button" onclick="addTime()">ADD</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
 
     <script src="myscript.js"></script>
   </body>

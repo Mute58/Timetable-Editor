@@ -1,13 +1,16 @@
-.ttime,
+.content table .ttime,
 th {
   background-color: rgb(251, 240, 255);
   color: rgb(80, 71, 121);
 }
-table,
+#mytable,
 th,
 td {
   border: 1px solid rgb(185, 156, 209);
   border-collapse: collapse;
+}
+#mytable tr td:not(.ttime) {
+  background-color: white;
 }
 th,
 td {
@@ -23,4 +26,29 @@ caption {
   font-size: 25px;
   font-weight: bold;
   color: rgb(74, 21, 123);
+}
+.tInfo {
+  border: 1px solid rgb(185, 156, 209);
+  border-collapse: collapse;
+}
+.tInfo tr td {
+  padding: 5px;
+}
+.tleft {
+  text-align: right;
+  background-color: rgb(251, 240, 255);
+  color: rgb(80, 71, 121);
+}
+.tright {
+  text-align: left;
+}
+#btnAdd,
+#btnReset {
+  border-radius: 5px;
+  background-color: rgb(199, 167, 224);
+  color: white;
+}
+#btnAdd:hover,
+#btnReset:hover {
+  background-color: rgb(153, 127, 173);
 }
