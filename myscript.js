@@ -73,3 +73,15 @@ function addTime() {
 
   cell.style.borderBottomColor = "rgb(185, 156, 209)";
 }
+
+function resetInnerHTML() {
+  for (var i = 1; i <= 13; i++) {
+    var row = table.rows[i];
+
+    for (var j = 1; j < row.cells.length; j++) {
+      row.cells[j].innerHTML = "";
+      row.cells[j].style.backgroundColor = "white";
+      row.cells[j].style.borderBottomColor = "rgb(185, 156, 209)";
+    }
+  }
+}
